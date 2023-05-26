@@ -14,11 +14,11 @@ After working through these questions, you will shift gears to create marketing 
 
 1. Use a pivot table to find the 10 most common (known) recorded causes of death, and evaluate the counts of each type. Once you have your metrics, plot these in a **bar chart**. In the analysis of the top 10 causes of death, you may see spelling mistakes that are affecting your counts. For example, you can assume Cholera and Cholrea are the same cause of death. Create a new column in the original dataset to update spelling errors to make your count of the top 10 causes more accurate. You will need to **update and refresh your pivot table** to see changes applied. (For the new column you create, copy the column with `Cause of Death/Burial` and correct spelling errors only for causes that appear in your top 10 list).
 
-2. Create a line chart showing the number of burials per year. How would you describe the overall trend in number of burials per year? In what years were there the most burials? Can you think of any plausible reason why?
+2. Create a line chart showing the number of burials per year. How would you describe the overall trend in number of burials per year? In what years were there the most burials? Can you think of any plausible reason why?  Civil War.  There were probably less burials around the late 1800's.
 
 3. Create a pivot table that shows the number of burials per year per month. Your rows should be years and columns should be months.   
 a. Apply conditional formatting to change the background color based on the number of burials. You can read about using conditional formatting here: https://support.microsoft.com/en-us/office/use-conditional-formatting-to-highlight-information-fed60dfa-1d3f-4e13-9ecb-f1951ff89d7f  
-b. Drill down into any months that stand out to investigate. What do you find?
+b. Drill down into any months that stand out to investigate. What do you find?  1850 had a Cholera outbreak
 
 4. Create a "Decade" column based off of the Burial Year column. Use a pivot table to examine burials for each decade. Look at the total number of burials and the proportion (aka percentage) of male burials and female burials. Create a clustered bar chart to show how male and female burials have changed over time. If you could use a refresher on percentages and proportions, here are some resources:  
 * https://www.wikihow.com/Calculate-Percentages
@@ -36,3 +36,5 @@ b. Drill down into any months that stand out to investigate. What do you find?
     b.  Find the Mean() age for those classified as "Child" and then again for those classified as "Adult".  
     c.  Create a burial_date column using the DATE() function to combine the burial year, month, and day. What do you notice when you apply this function to your data?   
     d.  Find the last infant to be buried in 1864. Do this by first finding the maximum date that an infant was buried using the MAXIFS function. Then use FILTER to find the infants that were buried on that date. You'll need to apply multiple conditions in your filter. This can be accomplished by multiplying the desired conditions. See https://www.spreadsheetclass.com/excel-filter-function/ for more information about applying complex conditions inside the filter function.
+
+We will give an individual presentation of 4-5 minutes.  They will concern questions that I thought of during the analysis.  
