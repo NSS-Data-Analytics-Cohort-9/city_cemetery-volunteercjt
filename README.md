@@ -45,3 +45,16 @@ It adds 1900 to the year.
     d.  Find the last infant to be buried in 1864. Do this by first finding the maximum date that an infant was buried using the MAXIFS function. Then use FILTER to find the infants that were buried on that date. You'll need to apply multiple conditions in your filter. This can be accomplished by multiplying the desired conditions. See https://www.spreadsheetclass.com/excel-filter-function/ for more information about applying complex conditions inside the filter function.
 
 We will give an individual presentation of 4-5 minutes.  They will concern questions that I thought of during the analysis.  
+
+Possible Presentation Topics:
+Cholera Outbreak  (Jun 1849, July 1850, Sep 1866, Jun 1873)
+Prevalence of child death by year
+Uncommon death names
+Scavenger Hunt (Find the President, Find the bird, etc.)
+Look into anomalies
+Male vs. Female deaths
+How does age affect cause of death?
+Residence and how it relates to cause of death
+Time of year and prevalence of death
+Times for increase in death for certain diseases
+
