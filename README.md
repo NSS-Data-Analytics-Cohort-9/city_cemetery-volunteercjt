@@ -4,6 +4,8 @@ The city of Nashville provides a dataset of known burials in city cemeteries fro
 
 The Nashville City Cemetery Association has approached you asking to analyze some of their data. This analysis will be used to compare the attributes of The Nashville City Cemetery with other historic cemeteries throughout the country. Note that much of this data comes from handwritten record books, so watch out for inconsistencies, typographical errors, etc. They realize their data is messy and there will be times during your analysis in which you will need to decide how data cleaning will be handled. Be sure to explain your cleaning process and consider the pros and cons of your chosen method. The association realizes that completely cleaning the data would be too time intensive and they are willing to sacrifice some accuracy for speed.
 
+So far I have used find/replace to correct some issues.  I have also used =IF(COUNTIF( to find certain misspellings, correct them, and copy/paste them onto the original data.
+
 Before diving into the data, take some time to orient yourself to what each column contains here: [Nashville City Cemetery Metadata](https://data.nashville.gov/api/views/diwx-fgj7/files/963c111e-2e2a-4133-a807-2becd590feb2?download=true&filename=Historic-Nashville-City-Cemetery-Interments-1846-1979-Metadata-v2.pdf).
 
 The questions that follow provide you with some guidance for the initial analysis of the data. As you are working, create a new sheet in your Excel file for each pivot table or analysis work done to create a visualization, and give each sheet a descriptive/meaningful name.
@@ -24,12 +26,14 @@ b. Drill down into any months that stand out to investigate. What do you find?  
 * https://www.wikihow.com/Calculate-Percentages
 * https://www.wikihow.com/Solve-Proportions
 
-5. Next look at how age at the time of death has changed over time. Add a column to the original dataset to classify each row to one of the following categories (0-18, 19-25, 26-40, 41-64, and 65+). Do this by creating a lookup table with VLOOKUP. Be sure to think about a strategy to deal with missing values. Also, create a "Year Group" dividing the records up based on burial year using a table and a VLOOKUP. Use the following groups: Before 1880, 1880-1900, 1901-1920, After 1920. Use a grouped bar chart to show how the proportion of burials per age group has changed over time. How would you describe the trends in terms of proportion of burials per age group over time?
+5. Next look at how age at the time of death has changed over time. Add a column to the original dataset to classify each row to one of the following categories (0-18, 19-25, 26-40, 41-64, and 65+). Do this by creating a lookup table with VLOOKUP. Be sure to think about a strategy to deal with missing values. Also, create a "Year Group" dividing the records up based on burial year using a table and a VLOOKUP. Use the following groups: Before 1880, 1880-1900, 1901-1920, After 1920. Use a grouped bar chart to show how the proportion of burials per age group has changed over time. How would you describe the trends in terms of proportion of burials per age group over time?  
+
+Fewer young people are dying in times closer to present day.
 
 6. Create a new column titled Last Name. Extract the last name from the Name column by subsetting to all characters to the left of the comma (see the DataCamp exercise titled "String Information - LEN, SEARCH" from the Data Analysis with Spreadsheets if you need help with this). This will result in many errors for rows missing commas.   
-    a.  Drill down to those rows without a comma - what do you notice?  
-    b.  What are the most common last names of people buried in this cemetery?  
-    c.  There was a particularly famous person buried in this cemetery. Can you find that person?
+    a.  Drill down to those rows without a comma - what do you notice? Lots of infants that died.  Or it is people buried with only a first name. 
+    b.  What are the most common last names of people buried in this cemetery?  Smith, Brown, Johnson, Jones, Williams, Moore, Green, Thompson
+    c.  There was a particularly famous person buried in this cemetery. Can you find that person?  Ex President Polk?
 
 7. The Civil War ended in April, 1865, with the last full year of fighting occurring in 1864.  
     a. Create an additional sheet using FILTER() to pull only the burials that occurred in 1864. Name this new sheet "Burials_1864". In this new sheet, create a new column called age_category. If the individual was age 0 put "Infant". If the individual was not an infant but under age 18, put "Child". Everyone aged 18 and above should be listed as "Adult".
