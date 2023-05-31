@@ -57,4 +57,4 @@ How does age affect cause of death?
 Residence and how it relates to cause of death
 Time of year and prevalence of death
 Times for increase in death for certain diseases
-
+Consumption deaths around the Civil War
